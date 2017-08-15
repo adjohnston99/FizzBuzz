@@ -1,15 +1,5 @@
-import java.util.Scanner;
-
 public class FizzBuzz {
 	 public static void main(String[] args) {
-		
-		 Scanner scanner = new Scanner(System.in);
-		 System.out.print("Enter your test numbers seperated by commas: ");
-		 String input = scanner.next();
-		 String[] inputSplit = input.split(",");
-		 for(int i = -1; inputSplit[i] != null; i++) {
-			 System.out.println(inputSplit[i]);
-		 }
 		 
 		 int[] testNums = {3, 5, 7, 11, 13};
 		 String[] responseStrings = {"Fizz", "Buzz", "Fuzz", "Bizz", "Biff"};
