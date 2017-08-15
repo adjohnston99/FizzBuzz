@@ -7,9 +7,14 @@ public class FizzBuzz {
 		 System.out.print("Enter your test numbers seperated by commas: ");
 		 String input = scanner.next();
 		 String[] inputSplit = input.split(",");
-		 for(int i = -1; inputSplit[i] != null; i++) {
-			 System.out.println(inputSplit[i]);
+		 for(int i = 0; inputSplit[i] != null; i++) {
+			 try {
+					 System.out.println(inputSplit[i]);
+			 } catch(Exception ArrayIndexOutOfBoundsException) {
+				 break;
+			 }
 		 }
+		 scanner.close();
 		 
 		 int[] testNums = {3, 5, 7, 11, 13};
 		 String[] responseStrings = {"Fizz", "Buzz", "Fuzz", "Bizz", "Biff"};
